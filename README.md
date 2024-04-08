@@ -1,14 +1,14 @@
 ```markdown
 # Node.js Blog API
 
-This is a Node.js application built using Express.js framework to create a RESTful API for managing blog posts with user authentication using JSON Web Tokens (JWT). The API allows users to register, log in, create, read, update, and delete blog posts.
+This is a Node.js application built using Express.js framework to create a RESTful API for managing blog posts with user authentication using JSON Web Tokens (JWT). The API allows users to register, log in, create, read, update, and delete blog posts. PSQL is used as a database here with sequelize ORM
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/ajeeshcp/blog-post-management.git
     ```
 
 2. Navigate to the project directory:
@@ -56,7 +56,7 @@ Create a `.env` file in the root directory and specify the following variables:
 - `DELETE /api/posts/:id`: Allows authenticated users to delete their own blog post.
 
 - `POST /api/posts/:id/comment`: Allows authenticated users to post comments.
-- `GET /api/posts/:id/comment`: Allows users to view all the comments under a post.
+- `GET /api/posts/:id/comment`: Allows users to view all the comments under a post with a child-parent  relationship.
 
 ## Additional Features
 
@@ -75,6 +75,8 @@ Express validator is used as a middleware for the purpose of input data validati
 ## Documentation
 
 API documentation can be found using Postman and the link is given below
+
+https://documenter.getpostman.com/view/26922886/2sA35MzeZW
 
 ## Technologies Used
 
