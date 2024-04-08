@@ -14,7 +14,7 @@ This is a Node.js application built using Express.js framework to create a RESTf
 2. Navigate to the project directory:
 
     ```bash
-    cd nodejs-blog-api
+        cd blog-post-management
     ```
 
 3. Install dependencies:
