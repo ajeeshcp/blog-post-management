@@ -28,6 +28,8 @@ Create a .env file in the root directory and specify the following variables:
 
     npm start
 
+6. Check the SQL_Changes/v1.sql file which contain all the SQL queries to run before starting the application
+
 Endpoints
 
 User Authentication
@@ -42,6 +44,9 @@ GET /api/posts/:id: Retrieves a specific blog post by ID.
 POST /api/posts: Allows authenticated users to create a new blog post.
 PUT /api/posts/:id: Allows authenticated users to update their own blog post.
 DELETE /api/posts/:id: Allows authenticated users to delete their own blog post.
+
+POST /api/posts/:id/comment Allows authenticated users to post comments
+GET /api/posts/:id/comment Allows users to view all the comments under a post
 
 Additional Features
 
@@ -68,4 +73,5 @@ Express.js
 JSON Web Tokens (JWT)
 PostgreSQL
 Express validator
+Sequeize ORM 
 Postman (for API documentation)
